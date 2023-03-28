@@ -1,0 +1,78 @@
+@import "../../src/styles/colors.scss";
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+
+  .infoContainer {
+    width: 100%;
+    padding: 10px 0 0 20px;
+  }
+
+  .title {
+    color: black;
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+
+  .title::first-letter {
+    text-transform: uppercase;
+  }
+
+  .number {
+    font-weight: 600;
+    color: map-get($colors, "strongGrey");
+  }
+
+  .types {
+    display: flex;
+    gap: 3px;
+  }
+
+  .image {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: map-get($colors, "lightGrey");
+  }
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pokemon {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+    }
+  }
+}

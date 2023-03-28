@@ -1,0 +1,144 @@
+.typeContainer {
+  width: 100px;
+  display: block;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  user-select: none;
+
+  &.grass {
+    background-color: rgb(76, 206, 76);
+    text-decoration: none;
+    color: black;
+  }
+
+  &.poison {
+    background-color: rgb(187, 59, 187);
+    color: white;
+    text-decoration: none;
+  }
+
+  &.fire {
+    background-color: rgb(240, 136, 39);
+    color: white;
+    text-decoration: none;
+  }
+
+  &.flying {
+    text-decoration: none;
+    background: rgb(131, 131, 131);
+    color: white;
+    background: linear-gradient(
+      0deg,
+      rgba(131, 131, 131, 1) 0%,
+      rgba(158, 158, 158, 1) 27%,
+      rgba(0, 228, 255, 1) 100%
+    );
+  }
+
+  &.water {
+    background-color: rgb(63, 166, 226);
+    color: white;
+    text-decoration: none;
+  }
+
+  &.bug {
+    background-color: rgb(48, 126, 48);
+    color: white;
+    text-decoration: none;
+  }
+
+  &.normal {
+    background-color: rgb(189, 189, 189);
+    text-decoration: none;
+    color: black;
+  }
+
+  &.electric {
+    background-color: rgb(233, 233, 27);
+    text-decoration: none;
+    color: black;
+  }
+
+  &.ground {
+    color: white;
+    background: rgb(133, 119, 11);
+    text-decoration: none;
+    background: linear-gradient(
+      0deg,
+      rgba(133, 119, 11, 1) 0%,
+      rgba(245, 245, 89, 1) 52%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  &.fairy {
+    background-color: rgb(251, 141, 214);
+    text-decoration: none;
+    color: white;
+  }
+
+  &.fighting {
+    background-color: rgb(206, 106, 24);
+    color: white;
+    text-decoration: none;
+  }
+
+  &.psychic {
+    background-color: rgb(248, 91, 201);
+    color: white;
+    text-decoration: none;
+  }
+
+  &.rock {
+    background-color: rgb(163, 141, 44);
+    color: white;
+    text-decoration: none;
+  }
+
+  &.steel {
+    background-color: rgb(216, 216, 216);
+    text-decoration: none;
+    color: black;
+  }
+
+  &.ghost {
+    background-color: rgb(92, 11, 112);
+    color: white;
+    text-decoration: none;
+  }
+
+  &.ice {
+    background-color: rgb(80, 209, 226);
+    text-decoration: none;
+    color: white;
+  }
+
+  &.dragon {
+    text-decoration: none;
+    background: rgb(190, 32, 32);
+    background: linear-gradient(
+      0deg,
+      rgba(190, 32, 32, 1) 0%,
+      rgba(78, 188, 241, 1) 69%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    color: white;
+  }
+
+  &.dark {
+    background-color: rgb(80, 78, 78);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.name::first-letter {
+  color: red;
+  text-transform: uppercase;
+}
