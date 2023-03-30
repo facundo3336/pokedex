@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import styles from "./index.module.scss";
 import { usePokemonList } from "../hooks/usePokemonList";
 import { Pokemon } from "../../components/Pokemon/Pokemon";
+import { Nav } from "../../components/Nav/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function Home() {
 
   return (
     <div className={styles.pokemonList}>
-      <Pokemon url={"" + data.results[0].url} />
+      <Nav />
     </div>
   );
 }
