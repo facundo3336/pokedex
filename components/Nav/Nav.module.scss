@@ -1,0 +1,204 @@
+@import "../../src/styles/colors.scss";
+
+.navContainer {
+  background-color: transparent;
+  transition: background-color 0s;
+  transition-delay: 0.4s;
+  position: relative;
+  min-height: 100vh;
+}
+
+.backgroundGrey {
+  background-color: map-get($colors, "transparentGrey");
+  transition-delay: 0s;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  list-style: none;
+  text-align: left;
+  height: 100%;
+  background-color: white;
+  min-height: 100vh;
+  transform: translate(-100%, 0px);
+  transition: transform 0.4s;
+
+  &.navOpen {
+    transform: translate(0, 0px);
+  }
+
+  ul {
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid white;
+    border-bottom: 1px solid map-get($colors, "grey");
+    color: map-get($colors, "strongerGrey");
+
+    &:hover {
+      cursor: pointer;
+      transition: 0.5s;
+      color: white;
+    }
+
+    &.grey {
+      border-left-color: map-get($colors, "navGrey");
+
+      &:hover {
+        background-color: map-get($colors, "navGrey");
+      }
+    }
+
+    &.red {
+      border-left-color: map-get($colors, "red");
+
+      &:hover {
+        background-color: map-get($colors, "red");
+      }
+    }
+
+    &.yellow {
+      border-left-color: map-get($colors, "yellow");
+
+      &:hover {
+        background-color: map-get($colors, "yellow");
+      }
+    }
+
+    &.orange {
+      border-left-color: map-get($colors, "orange");
+
+      &:hover {
+        background-color: map-get($colors, "orange");
+      }
+    }
+
+    &.green {
+      border-left-color: map-get($colors, "green");
+
+      &:hover {
+        background-color: map-get($colors, "green");
+      }
+    }
+
+    &.cian {
+      border-left-color: map-get($colors, "cian");
+
+      &:hover {
+        background-color: map-get($colors, "cian");
+      }
+    }
+
+    &.blue {
+      border-left-color: map-get($colors, "blue");
+
+      &:hover {
+        background-color: map-get($colors, "blue");
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navContainer {
+    background-color: transparent;
+  }
+
+  .backgroundGrey {
+    background-color: transparent;
+  }
+
+  .nav {
+    width: 100%;
+    max-width: 900px;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    transform: translate(0, 0px);
+    transition: transform 0s;
+
+    ul {
+      padding: 10px;
+      width: 120px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.grey {
+        border-bottom-color: map-get($colors, "navGrey");
+
+        &:hover {
+          background-color: map-get($colors, "navGrey");
+        }
+      }
+
+      &.red {
+        border-bottom-color: map-get($colors, "red");
+
+        &:hover {
+          background-color: map-get($colors, "red");
+        }
+      }
+
+      &.yellow {
+        border-bottom-color: map-get($colors, "yellow");
+
+        &:hover {
+          background-color: map-get($colors, "yellow");
+        }
+      }
+
+      &.orange {
+        border-bottom-color: map-get($colors, "orange");
+
+        &:hover {
+          background-color: map-get($colors, "orange");
+        }
+      }
+
+      &.green {
+        border-bottom-color: map-get($colors, "green");
+
+        &:hover {
+          background-color: map-get($colors, "green");
+        }
+      }
+
+      &.cian {
+        border-bottom-color: map-get($colors, "cian");
+
+        &:hover {
+          background-color: map-get($colors, "cian");
+        }
+      }
+
+      &.blue {
+        border-bottom-color: map-get($colors, "blue");
+
+        &:hover {
+          background-color: map-get($colors, "blue");
+        }
+      }
+    }
+
+    .navLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 5px solid white;
+      border-left: none;
+      color: map-get($colors, "strongerGrey");
+    }
+  }
+}

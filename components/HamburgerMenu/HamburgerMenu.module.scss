@@ -1,0 +1,34 @@
+@import "../../src/styles/colors.scss";
+
+.hamburgerButton {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: map-get($colors, "grey");
+  border: 2px solid map-get($colors, "strongGrey");
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .line {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburgerButton {
+    display: none;
+  }
+}
