@@ -1,18 +1,14 @@
-import { useState } from "react";
-import { HamburgerButton } from "../HamburgerMenu/HamburgerMenu";
 import styles from "./Nav.module.scss";
 
-export const Nav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+interface Props {
+  isOpen: boolean;
+}
 
+export const Nav = ({ isOpen }: Props) => {
   const navContainerClasses =
     (isOpen ? styles.backgroundGrey : "") + " " + styles.navContainer;
 
   const navOpenClass = isOpen ? styles.navOpen : "";
-
-  const onClickOpen = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <div className={navContainerClasses}>
@@ -30,7 +26,6 @@ export const Nav = () => {
           <ul className={styles.navLink + " " + styles.blue}>Noticias</ul>
         </li>
       </nav>
-      <HamburgerButton onClick={onClickOpen} />
     </div>
   );
 };

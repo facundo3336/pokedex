@@ -16,3 +16,22 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.sideSpacing {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .sideSpacing {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sideSpacing {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

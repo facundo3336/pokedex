@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./HamburgerMenu.module.scss";
 
 interface Props {

@@ -24,6 +24,7 @@
   min-height: 100vh;
   transform: translate(-100%, 0px);
   transition: transform 0.4s;
+  text-align: center;
 
   &.navOpen {
     transform: translate(0, 0px);
@@ -124,8 +125,8 @@
     justify-content: center;
     flex-direction: row;
     text-align: center;
-    transform: translate(0, 0px);
-    transition: transform 0s;
+    transform: none;
+    transition: none;
 
     ul {
       padding: 10px;
