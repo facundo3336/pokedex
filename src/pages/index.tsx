@@ -1,8 +1,6 @@
 import { Inter } from "next/font/google";
 import styles from "./index.module.scss";
 import { usePokemonList } from "../hooks/usePokemonList";
-import { Pokemon } from "../../components/Pokemon/Pokemon";
-import { Nav } from "../../components/Nav/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +19,5 @@ export default function Home() {
     return <div>Error</div>;
   }
 
-  return (
-    <div className={styles.pokemonList}>
-      <Nav />
-    </div>
-  );
+  return <div className={styles.pokemonList}></div>;
 }
