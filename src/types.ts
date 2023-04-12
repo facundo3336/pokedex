@@ -16,6 +16,7 @@ export interface PokemonResponse {
 }
 
 export interface PokemonListResponse {
+  next: string;
   results: Array<{
     name: string;
     url: string;

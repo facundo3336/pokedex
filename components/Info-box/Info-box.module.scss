@@ -1,0 +1,70 @@
+@import "../../src/styles/colors.scss";
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+
+  .textContainer {
+    padding: 15px;
+  }
+
+  .title {
+    color: white;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  &.yellow {
+    background-color: map-get($colors, "yellow");
+  }
+
+  &.green {
+    background-color: map-get($colors, "green");
+  }
+
+  &.black {
+    background-color: black;
+    color: white;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .container {
+    width: 450px;
+  }
+}

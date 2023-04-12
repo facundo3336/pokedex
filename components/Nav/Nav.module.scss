@@ -4,8 +4,20 @@
   background-color: transparent;
   transition: background-color 0s;
   transition-delay: 0.4s;
-  position: relative;
+  position: fixed;
   min-height: 100vh;
+  z-index: 50;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  width: 150px;
+  height: 60px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px auto;
 }
 
 .backgroundGrey {
@@ -21,13 +33,13 @@
   text-align: left;
   height: 100%;
   background-color: white;
-  min-height: 100vh;
-  transform: translate(-100%, 0px);
+  transform: translate((-140%), 0px);
   transition: transform 0.4s;
   text-align: center;
+  min-height: 100vh;
 
   &.navOpen {
-    transform: translate(0, 0px);
+    transform: translate(-20px, 0px);
   }
 
   ul {
@@ -113,6 +125,12 @@
 @media screen and (min-width: 768px) {
   .navContainer {
     background-color: transparent;
+    position: static;
+    min-height: auto;
+  }
+
+  .logo {
+    display: none;
   }
 
   .backgroundGrey {
@@ -127,6 +145,9 @@
     text-align: center;
     transform: none;
     transition: none;
+    min-height: 100%;
+    position: static;
+    margin: 0 auto;
 
     ul {
       padding: 10px;

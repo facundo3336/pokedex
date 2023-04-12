@@ -20,5 +20,5 @@ export const usePokemon = (url: string) => {
       types: parsedTypes(response.types),
     };
   };
-  return useQuery<Pokemon>("pokemon", fetchPokemon);
+  return useQuery<Pokemon>(url, fetchPokemon);
 };
