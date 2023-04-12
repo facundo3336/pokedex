@@ -63,7 +63,6 @@ export const Header = () => {
           <Nav isOpen={isOpen} />
         </Container>
       </div>
-
       <HamburgerButton onClick={onClickOpen} />
     </header>
   );

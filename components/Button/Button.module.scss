@@ -1,0 +1,29 @@
+@import "../../src/styles/colors.scss";
+
+.button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Shantell Sans", cursive;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &.green {
+    background-color: map-get($colors, "green");
+  }
+
+  &.blue {
+    background-color: map-get($colors, "blue");
+    color: white;
+  }
+
+  &.cian {
+    background-color: map-get($colors, "cian");
+    color: white;
+  }
+}
