@@ -6,6 +6,7 @@ import { Container } from "../../components/Container/Container";
 import { Header } from "../../components/Header/Header";
 import { InfoBox } from "../../components/Info-box/Info-box";
 import { Search } from "../../components/Search/Search";
+import { Footer } from "../../components/Footer/Footer";
 
 export default function Home() {
   const { isLoading, error, data } = usePokemonList(
@@ -64,6 +65,7 @@ export default function Home() {
           </div>
         </section>
       </Container>
+      <Footer />
     </div>
   );
 }
