@@ -1,15 +1,26 @@
+@import "../../src/styles/colors.scss";
+
 .pokemonList {
   min-height: 100vh;
-}
-
-.pokemonListSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
   padding-bottom: 30px;
-  padding-top: 50px;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.pokemonListSection {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid map-get($colors, "lightGrey");
 }
 
 .infoBoxSectionContainer {

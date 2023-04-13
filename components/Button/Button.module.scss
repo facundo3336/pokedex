@@ -8,6 +8,22 @@
   font-size: 1rem;
   font-family: "Shantell Sans", cursive;
 
+  &.sm {
+    font-size: 0.9rem;
+  }
+
+  &.md {
+    font-size: 1rem;
+  }
+
+  &.lg {
+    font-size: 1.3rem;
+  }
+
+  &.xl {
+    font-size: 1.5rem;
+  }
+
   &:hover {
     cursor: pointer;
     opacity: 0.8;
@@ -25,5 +41,14 @@
   &.cian {
     background-color: map-get($colors, "cian");
     color: white;
+  }
+
+  &.search {
+    background-color: map-get($colors, "orange");
+    color: white;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
