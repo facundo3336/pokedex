@@ -5,6 +5,7 @@ import { Pokemon } from "../../components/Pokemon/Pokemon";
 import { Container } from "../../components/Container/Container";
 import { Header } from "../../components/Header/Header";
 import { InfoBox } from "../../components/Info-box/Info-box";
+import { Search } from "../../components/Search/Search";
 
 export default function Home() {
   const { isLoading, error, data } = usePokemonList(
@@ -28,14 +29,17 @@ export default function Home() {
       <Header />
       <Container>
         <section className={styles.pokemonListSection}>
+          <Search />
           <div className={styles.pokemonList}>
             {data.results.map((p) => {
               return <Pokemon key={p.name} url={p.url} />;
             })}
           </div>
-          <Button color={"cian"} onClick={() => {}}>
-            Cargar mas Pokemon
-          </Button>
+          <div className={styles.loadMore}>
+            <Button fontSize="md" color={"cian"} onClick={() => {}}>
+              Cargar mas Pokemon
+            </Button>
+          </div>
         </section>
         <section>
           <div className={styles.infoBoxSectionContainer}>
