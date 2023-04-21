@@ -7,6 +7,8 @@ import { Header } from "../../components/Header/Header";
 import { InfoBox } from "../../components/Info-box/Info-box";
 import { Search } from "../../components/Search/Search";
 import { Footer } from "../../components/Footer/Footer";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Home() {
   const { isLoading, error, data } = usePokemonList(
@@ -33,7 +35,11 @@ export default function Home() {
           <Search />
           <div className={styles.pokemonList}>
             {data.results.map((p) => {
-              return <Pokemon key={p.name} url={p.url} />;
+              return (
+                <Link key={p.name} href={"/pokemons/" + p.name}>
+                  <Pokemon url={p.url} />
+                </Link>
+              );
             })}
           </div>
           <div className={styles.loadMore}>

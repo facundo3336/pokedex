@@ -1,0 +1,28 @@
+@import "../../src/styles/colors.scss";
+
+.rowsContainer {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.statName {
+  text-align: center;
+  padding-top: 5px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.whiteRow {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+
+.blueRow {
+  width: 100%;
+  height: 5px;
+  background-color: map-get($colors, "cian");
+}
